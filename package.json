@@ -1,6 +1,6 @@
 {
   "name": "vue-i18n-sync-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue-i18n-sync-webpack-plugin",
   "main": "src/index.js",
   "scripts": {

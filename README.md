@@ -17,7 +17,7 @@ Install with npm:
 
 ```angular2html
 // 最小化配置
-vueI18nSync({
+new VueI18nSyncWebpackPlugin({
     // 同步配置根目录
     i18nRoot: path.join(process.cwd(), 'src/locales'),
     // 修改目标字符串的根目录 不配置
@@ -28,7 +28,7 @@ vueI18nSync({
 
 ```angular2html
 // 全项配置介绍
-vueI18nSync({
+new VueI18nSyncWebpackPlugin({
     // 同步配置根目录
     i18nRoot: path.join(process.cwd(), 'src/locales'),
     // 修改目标字符串的根目录
