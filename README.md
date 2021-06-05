@@ -1,7 +1,7 @@
 # vue-i18n-sync-webpack-plugin
 提供国际化配置的各种同步操作
 * 支持配置中同步添加/修改/删除key
-* 支持vue文件中同步添加key，需使用vscode安装插件auto-create-vue-i18n
+* 支持vue文件中同步添加key，需使用vscode安装插件vue-i18n-sync
 * 支持vue文件中同步修改key
 * 支持同步添加/修改/删除注释等等操作
 * 支持根据配置名称自动移到指定文件
@@ -20,7 +20,7 @@ Install with npm:
 new VueI18nSyncWebpackPlugin({
     // 同步配置根目录
     i18nRoot: path.join(process.cwd(), 'src/locales'),
-    // 修改目标字符串的根目录 不配置
+    // 修改目标字符串时会查找替换的目录 可不配置
     replaceDir: path.join(process.cwd(), 'src')
 });
 ```
@@ -31,7 +31,7 @@ new VueI18nSyncWebpackPlugin({
 new VueI18nSyncWebpackPlugin({
     // 同步配置根目录
     i18nRoot: path.join(process.cwd(), 'src/locales'),
-    // 修改目标字符串的根目录
+    // 修改目标字符串时会查找替换的目录 可不配置
     replaceDir: path.join(process.cwd(), 'src')
     // 保持并行同步的目录。默认根据root自动生成
     i18nDirs: ['en-US', 'zh-CN', '...'],
