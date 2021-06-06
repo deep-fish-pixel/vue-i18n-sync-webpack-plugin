@@ -16,6 +16,8 @@ class VueI18nSyncWebpackPlugin {
       autoImportModule: true,
       // 设置key文件位置的分割符，为空表示不分离
       i18nSetKeyToFileSeperator: '.',
+      // 排除同步目录
+      excludeSyncDirRegExp: null,
     }
     Object.assign(this.options, options);
   }
